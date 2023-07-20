@@ -10,6 +10,7 @@ import useApplicationData from "hooks/useApplicationData";
 
 import "components/Application.scss";
 
+
 import DayList from "components/DayList";
 import Appointment from "components/Appointment";
 
@@ -27,12 +28,12 @@ export default function Application(props) {
     appointment => {
       return (
         <Appointment
-          key={appointment.id}
-          {...appointment}
-          interview={getInterview(state, appointment.interview)}
-          interviewers={interviewers}
-          bookInterview={bookInterview}
-          cancelInterview={cancelInterview}
+        key={appointment.id}
+        {...appointment}
+        interview={getInterview(state, appointment.interview)}
+        interviewers={interviewers}
+        bookInterview={bookInterview}
+        cancelInterview={cancelInterview}
         />
       );
     }
